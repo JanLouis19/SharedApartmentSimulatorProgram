@@ -2,6 +2,7 @@ from PyQt5 import QtWidgets
 from PyQt5.QtWidgets import *
 from PyQt5.uic import loadUi
 import sys
+import os
 import MainWindow
 import threading
 import time
