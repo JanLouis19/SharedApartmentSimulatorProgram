@@ -1,6 +1,9 @@
 # SharedApartmentSimulatorProgram
 A simulator about the daily living in a shared apartment with 11 people.
+
 Content: 1: Explanation, 2: How to use, 3: important to know
+
+
 1: Explanation: The main functionality of the program is the random simulator of the 11 co-residents’ decisions. They can either leave/enter the house or enter/leave one of the three bathrooms in the house. As the rooms of the residents are located in different places of the 2 floor-apartment, they have individual preferences to which bathroom they before, as the bathrooms are located in different places in the house (one on top floor and 2 on the lower floor). When the simulator is started, every resident starts as an own thread. Every 2 seconds, every resident gets a random number, which decides the action that he wants to perform right now (leave house, enter house, leave bathroom 1 etc...). After the action that is wanted in this 'round' has been decided, the program checks whether this action is possible to perform right now. For example if the action is ‘leave house’ but the resident is already outside of the house, this action is not possible to perform so nothing happens for this resident in this ‘round’. If the action is to enter a bathroom, for example the big bathroom, but this bathroom is already occupied, the resident will perform the action to enter another bathroom, and only if all three of the bathrooms are already occupied, nothing will happen for the resident in this ‘round’. 
 Then after two seconds, another random number is delivered to the residents’ thread and all the checks are done again, and if everything alright, the action will be performed.
 
