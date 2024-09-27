@@ -110,7 +110,7 @@ class Worker(QThread):
                 self.signalMatheus4_1.emit()
             elif x == "BathTopIn" and homeVF == "t" and bathVF == "f" and bathTopVF == "f":
                 print(f"Matheus  {x}")
-                if bathBigVF == "f":        #----- same procedure as before, if possible the resident tries to enter the big bathroom, if possible
+                if bathBigVF == "f":        #----- same procedure as before, if possible the resident tries to enter the big bathroom
                     bathVF = "t"
                     bathBigVF = "t"
                     bathBigVFmath = "t"
@@ -983,7 +983,7 @@ class WorkerLabel(QThread):
 
 class Ui_Form(object):
     #----- The 3 play methods -----
-    #----- They simply return a random value between 1 and 200, and every possible outcome has a certain ranges of values, -----
+    #----- They simply return a random value between 1 and 200, and every possible outcome has a certain range of values, -----
     #----- giving a probability of this outcome, the returned outcomes are used by the Worker Threads to then emit signals based on the outcome
     #----- The only difference between the 3 play methods is the probability of entering each bathroom, based again on the location of the room in the house
     def play2(self, okaResidentt):
