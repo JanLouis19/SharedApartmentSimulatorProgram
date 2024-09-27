@@ -69,7 +69,7 @@ class Ui_MainWindow(object):
     def clickedBtnLiveLine(self):
         # ----- The StartStopPixel and LiveLinePixel are explained in the description of the ComboPressed Function below -----
         # ----- They have no visual effect for the user, they just help make the program work -----
-        # ----- The integers c1 and c2 are also just a help for the program, informing wether the button Start/Stop was clicked or not -----
+        # ----- The integers c1 and c2 are also just a help for the program, informing whether the button Start/Stop was clicked or not -----
         c1 = 0
         c2 = 1
         if (self.StartStopPixel.isVisible() == False):
